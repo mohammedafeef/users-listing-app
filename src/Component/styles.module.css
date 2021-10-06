@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+
+/* To overwrite all default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+:root {
+  /* To convert 1rem to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content_wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(
+    45deg,
+    #00dbde,
+    #3aa9e5,
+    #8865f0,
+    #ef0cfd
+  );
+  background: linear-gradient(45deg, #00dbde, #3aa9e5, #8865f0, #ef0cfd);
+}
+
+.container {
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  padding: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.text_input {
+
+  background-color: transparent;
+  padding: 1rem;
+  margin: 2rem 0;
+  font-size: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  transition: box-shadow 0.4s ease-in-out;
+}
+.text_input:focus-within {
+  outline: none;
+  border-width: 2px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+.error_section{
+  font-size:1.8rem;
+  color:red;
+}
+
+.submit_btn {
+  font-size: 2.5rem;
+  padding: 0.3rem 2rem;
+  margin: 1rem 0 2rem;
+  border: none;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(
+    45deg,
+    #00dbde,
+    #3aa9e5,
+    #8865f0,
+    #ef0cfd
+  );
+  background: linear-gradient(45deg, #00dbde, #3aa9e5, #8865f0, #ef0cfd);
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  cursor:pointer;
+
+}
+.submit_btn:hover {
+  transition: transform 0.5s ease-in-out;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(0deg, #00dbde, #3aa9e5, #8865f0, #ef0cfd);
+  background: linear-gradient(10deg, #00dbde, #3aa9e5, #8865f0, #ef0cfd);
+  transform: translateY(-4px);
+}
+
+.login_message {
+  text-align: center;
+  font-size: 2.3rem;
+  color: gray;
+}
+
+.login_methods {
+  margin-top: 1rem;
+}
+
+.login_method {
+  color: white;
+  margin: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.3rem 1.6rem;
+  background: #3f5c9a;
+  border-radius: 4px;
+  transition: transform 0.5s ease-in-out;
+  cursor:pointer;
+}
+.login_method:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(-3px);
+}
+.gplus-section {
+  background: #ff0000;
+}
+.icon {
+  margin-right: 8px;
+}
+
+.sign_up_section {
+  font-size: 2.3rem;
+  margin-top:1.5rem;
+}
+
+.sign_up{
+    color:#3f5c9a;
+    cursor:pointer;
+    text-decoration:none;
+}
+.sign_up:hover{
+  text-decoration: underline;
+}
+
+
+/* user table styles */
+
+.users {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.users td, .users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+.users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.usersContainer{
+  
+}
+@media only screen and (min-width: 1200px){
+    .container{
+        width:35%;
+        height:80%;
+        padding-top:3rem;
+    }
+}
