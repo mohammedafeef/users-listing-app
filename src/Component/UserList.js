@@ -1,13 +1,12 @@
 import styles from "./styles.module.css";
 import {useState, useEffect} from 'react';
-import AuthService from "../service/AuthService";
+import UsersService from "../service/UsersService";
 export default function UserList() {
     const [users, setUsers] = useState();
   useEffect(() => {
     const  getUsers = async() =>{
-        const res = await AuthService.getUsers();
-        console.log(res);
-        setUsers(res);
+        const res = await UsersService.getUsers();
+        setUsers(res.data);
     }
     getUsers();
   }, [])
